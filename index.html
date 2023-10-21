@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Calc Body -->
+    <div class="calcbody">
+        <!-- Display Screen -->
+    <div class="Calcscreen">
+        <div id="calcoperation">''</div>
+        <div id="calctyped">''</div>
+    </div>
+    
+          <!-- Calc Button -->
+    <div class="calcBtnRow">
+        <div class="btnRowCstm">
+            <button id="ac" onclick="clearDisplay()">A/C</button>
+            <button id="signChange" onclick="changeSign()">+/-</button>
+            <button class="opt" onclick="appendToDisplay('%')">%</button>
+            <button class="opt" id="/" onclick="appendToDisplay('/')">/</button>
+        </div>
+
+
+        <div class="btnRowCstm">
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button class="opt" id="*" onclick="appendToDisplay('*')">*</button>
+        </div>
+
+        <div class="btnRowCstm">
+            <button  onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button class="opt" onclick="appendToDisplay('-')">-</button>
+        </div>
+
+       <div class="btnRowCstm">
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button class="opt" onclick="appendToDisplay('+')">+</button>
+       </div>
+       
+
+       <div class="btnRowCstm">
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button   id="del" onclick="deleteLast()">Del</button>
+        <button class="opt" id="equal" onclick="calculateResult()">=</button>
+       </div>
+    </div>
+    </div>
+    <script src="index.js "></script>
+</body>
+</html>

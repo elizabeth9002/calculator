@@ -1,0 +1,78 @@
+/* @import url("https://fonts.google"); */
+
+.calcbody{
+    width: 290px;
+    margin: auto;
+    min-height: 300px;
+    box-shadow: 0 8px 54px - 7px black;
+    background-color: #344655;
+    margin-top: 80px;
+}
+
+.calcscreen{
+    padding: 20px;
+}
+
+#calcoperation{
+    font-size: 20.8px;
+    text-align: right;
+    color: #0da3a5;
+    padding-bottom: 8px;
+}
+
+#calctyped{
+    font-size: 32px;
+    text-align: right;
+    color: #660e74;
+}
+
+.calcBtnRow{
+    display: flex;
+    flex-direction: column;
+}
+
+.btnRowCstm{
+    display: table;
+}
+
+.calcBtnRow button{
+    width: 25%;
+    background: #425062;
+    color: #ffffff;
+    height: 65px;
+    font-size: 30px;
+    border: none;
+    border-color: #3c4657;
+    border-radius: 1px 1px 0px 0;
+    border-style: solid;
+    cursor: grab;
+}
+
+#ac{
+    color: #ff7665;
+    cursor: default;
+}
+
+#signChange{
+    color: crimson;
+}
+
+#equal{
+   background-color: hotpink;
+   color: deeppink;
+}
+
+button.opt{
+    color: #0ef;
+    cursor: pointer;
+}
+
+.calcBtnRow button:active{
+   position: relative; 
+   top: 1px;
+}
+
+.calcBtnRow button:hover{
+    background: #3e4b5c;
+}
+
